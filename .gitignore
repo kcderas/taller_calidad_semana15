@@ -1,0 +1,33 @@
+# --- Artefactos de Python -------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Entornos virtuales ---------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- Caché de herramientas ------------------------------------------------
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Datos ----------------------------------------------------------------
+# Los archivos de datos no se versionan: pueden ser grandes, cambiar con
+# frecuencia o contener informacion que no debe publicarse.
+*.csv
+*.xlsx
+*.parquet
+# Excepcion intencional: la muestra ficticia que documenta el formato esperado.
+!data/ventas_ejemplo.csv
+
+# --- Secretos -------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# --- Varios ---------------------------------------------------------------
+*.log
+.ipynb_checkpoints/
+.DS_Store
